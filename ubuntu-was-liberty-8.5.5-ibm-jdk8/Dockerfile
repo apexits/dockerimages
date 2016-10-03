@@ -12,9 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+#Thanks to IBM for the original the Dockerfile.
+# Modified the original WAS liberty profile Dockerfile to fit the project needs.
+
 FROM ubuntu:latest
 
-MAINTAINER John Dondapati <john.dondapati@feisystems.com> (@johndondapati)
+MAINTAINER John Dondapati <john@apex-its.com> (@johndondapati)
 
 RUN apt-get update && apt-get dist-upgrade -y  \
     && apt-get install -y wget unzip \
